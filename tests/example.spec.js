@@ -10,7 +10,7 @@ test.describe('Test Home Page', () => {
 
   });
 
-  test('Failed', async ({ page }) => {
+  test.skip('Failed', async ({ page }) => {
     await page.goto('/')
     
     const text = await page.locator('body').innerText();
